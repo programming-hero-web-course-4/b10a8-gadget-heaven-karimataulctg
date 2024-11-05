@@ -1,0 +1,113 @@
+[
+    {
+        "product_id": "001",
+        "product_title": "Laptop Pro 15",
+        "product_image": "https://i.ibb.co.com/HtSSTYF/Laptop-Pro-15.jpg",
+        "category": "Laptop",
+        "price": 999,
+        "description": "High-performance laptop with a sleek design.",
+        "specification": ["Intel Core i7", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": "002",
+        "product_title": "Mobile X",
+        "product_image": "https://i.ibb.co.com/TTVhSrY/Mobile-X.jpg",
+        "category": "Mobile",
+        "price": 699,
+        "description": "Latest smartphone with a stunning display.",
+        "specification": ["6.5-inch OLED", "128GB storage", "5G support"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": "003",
+        "product_title": "Tablet Plus",
+        "product_image": "https://i.ibb.co.com/BV9jv85/Tablet-Plus.webp",
+        "category": "Tablet",
+        "price": 499,
+        "description": "Versatile tablet for work and play.",
+        "specification": ["10.1-inch display", "64GB storage", "Stylus pen"],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": "004",
+        "product_title": "Earbuds Pro",
+        "product_image": "https://i.ibb.co.com/BTh7fvp/Earbuds-Pro.webp",
+        "category": "Earbuds",
+        "price": 199,
+        "description": "High-quality sound with noise cancellation.",
+        "specification": ["Bluetooth 5.0", "30-hour battery life", "IPX4 water resistance"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": "005",
+        "product_title": "Headphones Max",
+        "product_image": "https://i.ibb.co.com/VJwWk80/Headphones-Max.jpg",
+        "category": "Headphones",
+        "price": 149,
+        "description": "Comfortable over-ear headphones with great sound.",
+        "specification": ["Wireless", "20-hour battery life", "Built-in mic"],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": "006",
+        "product_title": "Laptop Lite",
+        "product_image": "https://i.ibb.co.com/z4kH2rY/Laptop-Lite.jpg",
+        "category": "Laptop",
+        "price": 799,
+        "description": "Lightweight laptop for everyday use.",
+        "specification": ["Intel Core i5", "8GB RAM", "256GB SSD"],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": "007",
+        "product_title": "Mobile Y",
+        "product_image": "https://i.ibb.co.com/888L4mP/Mobile-Y.jpg",
+        "category": "Mobile",
+        "price": 599,
+        "description": "Mid-range smartphone with great features.",
+        "specification": ["6.3-inch display", "64GB storage", "4G support"],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": "008",
+        "product_title": "Tablet Mini",
+        "product_image": "https://i.ibb.co.com/WPgmkQj/Tablet-Mini.jpg",
+        "category": "Tablet",
+        "price": 399,
+        "description": "Compact tablet for on-the-go use.",
+        "specification": ["8-inch display", "32GB storage", "Wi-Fi only"],
+        "availability": true,
+        "rating": 4.0
+    },
+    {
+        "product_id": "009",
+        "product_title": "Earbuds Basic",
+        "product_image": "https://i.ibb.co.com/2Sf1KP2/Earbuds-Basic.jpg",
+        "category": "Earbuds",
+        "price": 99,
+        "description": "Affordable earbuds with decent sound quality.",
+        "specification": ["Bluetooth 4.2", "15-hour battery life", "No water resistance"],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": "010",
+        "product_title": "Headphones Plus",
+        "product_image": "https://i.ibb.co.com/HYP8Bsv/Headphones-Plus.jpg",
+        "category": "Headphones",
+        "price": 129,
+        "description": "Over-ear headphones with a balanced sound profile.",
+        "specification": ["Wireless", "18-hour battery life", "Built-in mic"],
+        "availability": true,
+        "rating": 4.3
+    }
+]
+   
