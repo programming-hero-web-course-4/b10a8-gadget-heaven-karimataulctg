@@ -39,9 +39,9 @@ const NavBar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li className='font-bold underline'><NavLink to="/" className={isSpecialPage ? 'text-black' : 'text-white'}>Home</NavLink></li>
+          <li className='font-bold underline mr-2'><NavLink to="/" className={isSpecialPage ? 'text-black' : 'text-white'}>Home</NavLink></li>
           <li><a className={isSpecialPage ? 'text-black' : 'text-white'}>Statistics</a></li>
-          <li><NavLink to="dashboard" className={isSpecialPage ? 'text-black' : 'text-white'}>Dashboard</NavLink> </li>
+          <li className='ml-2'><NavLink to="dashboard" className={isSpecialPage ? 'text-black' : 'text-white'}>Dashboard</NavLink> </li>
         </ul>
       </div>
       <div className="navbar-end">
