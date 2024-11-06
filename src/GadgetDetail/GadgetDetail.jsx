@@ -4,6 +4,7 @@ import imgCart from '../assets/shopping-cart-NavIcon.png';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
+import { FaRegHeart } from "react-icons/fa6";
 
 const GadgetDetail = () => {
   const { product_id } = useParams(); // product_id is a string
@@ -31,9 +32,22 @@ const GadgetDetail = () => {
     }
   };
 
+  const addToWishlist = () => {
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    const alreadyInWishlist = wishlist.find(item => item.product_id === gadget.product_id);
+
+    if (alreadyInWishlist) {
+      toast.error('Item already in wishlist!');
+    } else {
+      wishlist.push(gadget);
+      localStorage.setItem('wishlist', JSON.stringify(wishlist));
+      toast.success('Added to wishlist!');
+    }
+  };
+
   return (
     <>
-    <Helmet><title>Gadget Details|GH</title></Helmet>
+      <Helmet><title>Gadget Details | GH</title></Helmet>
       <div className='relative bg-[#9538E2] pb-32 mb-72 pt-2'>
         <h2 className='text-4xl font-bold text-center text-white mb-2'>Product Details</h2>
         <p className='text-white text-center text-sm'>Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
@@ -70,12 +84,20 @@ const GadgetDetail = () => {
               </div>
               {rating}
               <br />
-              <button
-                className="px-4 py-2 flex justify-center text-white rounded-badge items-center gap-2 mt-2 bg-[#9538E2]"
-                onClick={addToCart}
-              >
-                Add to Cart <img className='w-4 h-4' src={imgCart} alt="" />
-              </button>
+              <div className='flex justify-center items-center gap-2'>
+                <button
+                  className="px-4 py-2 flex justify-center text-white rounded-badge items-center gap-2 mt-2 bg-[#9538E2]"
+                  onClick={addToCart}
+                >
+                  Add to Cart <img className='w-4 h-4' src={imgCart} alt="" />
+                </button>
+                <div
+                  className='btn btn-outline btn-md text-xl rounded-full flex items-center justify-center'
+                  onClick={addToWishlist}
+                >
+                  <FaRegHeart />
+                </div>
+              </div>
             </div>
           </div>
         </div>

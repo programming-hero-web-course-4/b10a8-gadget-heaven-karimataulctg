@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import del from '../assets/delete.png';
 import { Helmet } from 'react-helmet';
 import imgModal from '../assets/modal.png';
@@ -47,8 +47,12 @@ const DashBoard = () => {
         <h2 className='text-4xl font-bold text-center text-white mb-2'>Dashboard</h2>
         <p className='text-white text-center text-sm'>Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
         <div className='flex justify-center items-center gap-2 mt-6'>
-          <button className="btn btn-sm px-16 text-lg rounded-badge text-[#9538E2]">Cart</button>
-          <button className="btn btn-sm btn-outline text-lg rounded-badge text-white px-16">Wishlist</button>
+          <NavLink to="/dashboard" className="btn btn-sm px-16 text-lg rounded-badge text-[#9538E2]">
+            Cart
+          </NavLink>
+          <NavLink to="/wishlist" className="btn btn-sm btn-outline text-lg rounded-badge text-white px-16">
+            Wishlist
+          </NavLink>
         </div>
       </div>
       <div className='flex justify-between items-center py-4'>

@@ -12,6 +12,7 @@ import DashBoard from './Dashboard/DashBoard';
 import GadgetDetail from './GadgetDetail/GadgetDetail';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Wishlist from './WishList/Wishlist';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: 'dashboard',
         element: <DashBoard />
+      },
+      {
+        path: 'wishlist',
+        element: <Wishlist />
       }
     ],
   },

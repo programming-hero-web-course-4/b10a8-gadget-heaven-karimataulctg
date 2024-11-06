@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
 
-import Gadgets from '../Gadgets/Gadgets';
+// import Gadgets from '../Gadgets/Gadgets';
 import GadgetList from '../GadgetList/GadgetList';
 import { Helmet } from 'react-helmet';
 
