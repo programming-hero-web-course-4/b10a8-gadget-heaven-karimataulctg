@@ -20,7 +20,7 @@ const GadgetList = () => {
     : gadgets.filter(gadget => gadget.category === selectedCategory);
 
   return (
-    <div className='flex flex-col lg:flex-row gap-10'>
+    <div className='flex flex-col lg:flex-row gap-10 mx-4'>
       {/* Category Buttons */}
       <div className="flex flex-col gap-4 mb-4">
         {categories.map((category, index) => (

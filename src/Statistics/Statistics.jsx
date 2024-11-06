@@ -11,7 +11,7 @@ const Statistics = () => {
 
       </div>
       <div>
-        <h1 className='text-2xl text-center font-bold py-16'>No items in the Statistics cart.</h1>
+        <h1 className='text-2xl text-center font-bold py-32'>No items in the Statistics cart.</h1>
       </div>
         </div>
     );

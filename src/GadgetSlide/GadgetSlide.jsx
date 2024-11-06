@@ -6,7 +6,8 @@ import img4 from '../assets/img4.jpg';
 
 const GadgetSlide = () => {
     return (
-        <div className="carousel w-full">
+        <div className='pb-32'>
+            <div className="carousel w-full">
   <div id="slide1" className="carousel-item relative w-full">
     <img
       src={img1}
@@ -44,6 +45,7 @@ const GadgetSlide = () => {
     </div>
   </div>
 </div>
+        </div>
     );
 };
 

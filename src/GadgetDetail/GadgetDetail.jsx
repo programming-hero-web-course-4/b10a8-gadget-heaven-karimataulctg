@@ -52,7 +52,7 @@ const GadgetDetail = () => {
         <h2 className='text-4xl font-bold text-center text-white mb-2'>Product Details</h2>
         <p className='text-white text-center text-sm'>Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
       </div>
-      <div className='absolute top-52 left-80 z-20 rounded-t-xl'>
+      <div className='absolute top-56  lg:top-52 lg:left-80 z-20 rounded-t-xl'>
         <div className="hero bg-white min-h-[calc(100vh-200px)] rounded-t-xl">
           <div className="hero-content flex-col lg:flex-row">
             <img
