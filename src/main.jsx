@@ -13,6 +13,8 @@ import GadgetDetail from './GadgetDetail/GadgetDetail';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Wishlist from './WishList/Wishlist';
+import GadgetSlide from './GadgetSlide/GadgetSlide';
+import Statistics from './Statistics/Statistics';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
       {
         path: 'wishlist',
         element: <Wishlist />
+      },
+      {
+        path: 'gadgetslide',
+        element: <GadgetSlide></GadgetSlide>
+      },
+      {
+        path: 'statistics',
+         element: <Statistics></Statistics>
       }
     ],
   },

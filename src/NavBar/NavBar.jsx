@@ -6,11 +6,15 @@ import { NavLink, useLocation } from 'react-router-dom';
 const NavBar = () => {
   const location = useLocation();
 
-  // Check if the current route matches the gadget details page, dashboard page, or wishlist page
-  const isSpecialPage = location.pathname.startsWith('/gadgets/') || location.pathname === '/dashboard' || location.pathname === '/wishlist';
+  // Check if the current route matches the special pages
+  const isSpecialPage = location.pathname.startsWith('/gadgets/') || 
+                        location.pathname === '/dashboard' || 
+                        location.pathname === '/wishlist' ||
+                        location.pathname === '/statistics' ||
+                        location.pathname === '/gadgetslide';
 
   return (
-    <div className={`navbar mt-6 rounded-t-xl ${isSpecialPage ? 'bg-white text-black' : 'bg-[#9538E2] text-white'}`}>
+    <div className={`navbar mt-6 rounded-t-xl ${isSpecialPage ? 'bg-white text-[#9538E2]' : 'bg-[#9538E2] text-white'}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -30,25 +34,27 @@ const NavBar = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>Home</a></li>
-            <li><a>Statistics</a></li>
-            <li><a>Dashboard</a></li>
+            <li><NavLink to="/" className={isSpecialPage ? 'text-[#9538E2]' : 'text-white'}>Home</NavLink></li>
+            <li><NavLink to="/statistics" className={isSpecialPage ? 'text-[#9538E2]' : 'text-white'}>Statistics</NavLink></li>
+            <li><NavLink to="/dashboard" className={isSpecialPage ? 'text-[#9538E2]' : 'text-white'}>Dashboard</NavLink></li>
+            <li><NavLink to="/gadgetslide" className={isSpecialPage ? 'text-[#9538E2]' : 'text-white'}>Gadget Slide</NavLink></li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">Gadget Heaven</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li className='font-bold underline mr-2'><NavLink to="/" className={isSpecialPage ? 'text-black' : 'text-white'}>Home</NavLink></li>
-          <li><a className={isSpecialPage ? 'text-black' : 'text-white'}>Statistics</a></li>
-          <li className='ml-2'><NavLink to="/dashboard" className={isSpecialPage ? 'text-black' : 'text-white'}>Dashboard</NavLink> </li>
+          <li className='font-bold underline mr-2'><NavLink to="/" className={isSpecialPage ? 'text-[#9538E2]' : 'text-white'}>Home</NavLink></li>
+          <li><NavLink to="/statistics" className={isSpecialPage ? 'text-[#9538E2]' : 'text-white'}>Statistics</NavLink></li>
+          <li className='ml-2'><NavLink to="/dashboard" className={isSpecialPage ? 'text-[#9538E2]' : 'text-white'}>Dashboard</NavLink></li>
+          <li className='ml-2'><NavLink to="/gadgetslide" className={isSpecialPage ? 'text-[#9538E2]' : 'text-white'}>Gadget Slide</NavLink></li>
         </ul>
       </div>
       <div className="navbar-end">
-        <NavLink to="/dashboard" className={`p-2 rounded-full mr-2 hover:cursor-pointer ${isSpecialPage ? 'bg-gray-200 text-black' : 'bg-white'}`}>
+        <NavLink to="/dashboard" className={`p-2 rounded-full mr-2 hover:cursor-pointer ${isSpecialPage ? 'bg-gray-200 text-[#9538E2]' : 'bg-white text-[#9538E2]'}`}>
           <img className='h-4 w-4' src={shoppingCart} alt="Cart" />
         </NavLink>
-        <NavLink to="/wishlist" className={`p-2 rounded-full hover:cursor-pointer ${isSpecialPage ? 'bg-gray-200 text-black' : 'bg-white'}`}>
+        <NavLink to="/wishlist" className={`p-2 rounded-full hover:cursor-pointer ${isSpecialPage ? 'bg-gray-200 text-[#9538E2]' : 'bg-white text-[#9538E2]'}`}>
           <img className='h-4 w-4' src={heartIcon} alt="Wishlist" />
         </NavLink>
       </div>
